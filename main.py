@@ -7,4 +7,6 @@ if __name__ == "__main__":
 
 
 print("Rimsha")
+print("Rimsha")
+print("Princess")
 print("Princess")
