@@ -1,0 +1,74 @@
+def create_cat_svg(filename="cat_image.svg"):
+    """Generate a cute SVG cat image and save it to a file."""
+    
+    svg_content = '''<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="400" height="400">
+  <!-- Cat Body -->
+  <ellipse cx="100" cy="130" rx="60" ry="50" fill="#f4a460" stroke="#8b4513" stroke-width="2"/>
+
+  <!-- Cat Head -->
+  <circle cx="100" cy="80" r="40" fill="#f4a460" stroke="#8b4513" stroke-width="2"/>
+
+  <!-- Left Ear -->
+  <polygon points="70,55 60,20 85,45" fill="#f4a460" stroke="#8b4513" stroke-width="2"/>
+  <!-- Left Inner Ear -->
+  <polygon points="72,50 65,28 83,46" fill="#ffb6c1"/>
+
+  <!-- Right Ear -->
+  <polygon points="130,55 140,20 115,45" fill="#f4a460" stroke="#8b4513" stroke-width="2"/>
+  <!-- Right Inner Ear -->
+  <polygon points="128,50 135,28 117,46" fill="#ffb6c1"/>
+
+  <!-- Left Eye -->
+  <ellipse cx="84" cy="73" rx="7" ry="9" fill="white" stroke="#8b4513" stroke-width="1.5"/>
+  <ellipse cx="84" cy="73" rx="4" ry="6" fill="#2e8b57"/>
+  <circle cx="84" cy="73" r="2.5" fill="black"/>
+  <circle cx="82" cy="70" r="1" fill="white"/>
+
+  <!-- Right Eye -->
+  <ellipse cx="116" cy="73" rx="7" ry="9" fill="white" stroke="#8b4513" stroke-width="1.5"/>
+  <ellipse cx="116" cy="73" rx="4" ry="6" fill="#2e8b57"/>
+  <circle cx="116" cy="73" r="2.5" fill="black"/>
+  <circle cx="114" cy="70" r="1" fill="white"/>
+
+  <!-- Nose -->
+  <polygon points="100,84 96,89 104,89" fill="#ff69b4"/>
+
+  <!-- Mouth -->
+  <path d="M 96,89 Q 92,95 88,92" fill="none" stroke="#8b4513" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M 104,89 Q 108,95 112,92" fill="none" stroke="#8b4513" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="100" y1="89" x2="100" y2="95" stroke="#8b4513" stroke-width="1.5"/>
+
+  <!-- Whiskers Left -->
+  <line x1="74" y1="85" x2="50" y2="80" stroke="#8b4513" stroke-width="1" stroke-linecap="round"/>
+  <line x1="74" y1="89" x2="48" y2="90" stroke="#8b4513" stroke-width="1" stroke-linecap="round"/>
+  <line x1="74" y1="93" x2="50" y2="100" stroke="#8b4513" stroke-width="1" stroke-linecap="round"/>
+
+  <!-- Whiskers Right -->
+  <line x1="126" y1="85" x2="150" y2="80" stroke="#8b4513" stroke-width="1" stroke-linecap="round"/>
+  <line x1="126" y1="89" x2="152" y2="90" stroke="#8b4513" stroke-width="1" stroke-linecap="round"/>
+  <line x1="126" y1="93" x2="150" y2="100" stroke="#8b4513" stroke-width="1" stroke-linecap="round"/>
+
+  <!-- Stripes on head -->
+  <path d="M 88,42 L 92,55" stroke="#cd853f" stroke-width="2" stroke-linecap="round"/>
+  <path d="M 100,38 L 100,52" stroke="#cd853f" stroke-width="2" stroke-linecap="round"/>
+  <path d="M 112,42 L 108,55" stroke="#cd853f" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Front Left Paw -->
+  <ellipse cx="75" cy="170" rx="15" ry="10" fill="#f4a460" stroke="#8b4513" stroke-width="1.5"/>
+  <line x1="68" y1="170" x2="68" y2="176" stroke="#8b4513" stroke-width="1" stroke-linecap="round"/>
+  <line x1="75" y1="172" x2="75" y2="178" stroke="#8b4513" stroke-width="1" stroke-linecap="round"/>
+  <line x1="82" y1="170" x2="82" y2="176" stroke="#8b4513" stroke-width="1" stroke-linecap="round"/>
+
+  <!-- Front Right Paw -->
+  <ellipse cx="125" cy="170" rx="15" ry="10" fill="#f4a460" stroke="#8b4513" stroke-width="1.5"/>
+  <line x1="118" y1="170" x2="118" y2="176" stroke="#8b4513" stroke-width="1" stroke-linecap="round"/>
+  <line x1="125" y1="172" x2="125" y2="178" stroke="#8b4513" stroke-width="1" stroke-linecap="round"/>
+  <line x1="132" y1="170" x2="132" y2="176" stroke="#8b4513" stroke-width="1" stroke-linecap="round"/>
+
+  <!-- Tail -->
+  <path d="M 155,140 Q 180,130 175,100 Q 172,80 165,85" fill="none" stroke="#f4a460" stroke-width="6" stroke-linecap="round"/>
+  <path d="M 155,140 Q 180,130 175,100 Q 172,80 165,85" fill="none" stroke="#8b4513" stroke-width="1.5" stroke-linecap="round"/>
+
+  <!-- Belly -->
+  <ellipse cx="100" cy="140" rx="35" ry="25" fill="#ffe4b5" opacity="0.6"/>
