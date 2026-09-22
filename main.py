@@ -6,7 +6,7 @@ if __name__ == "__main__":
     main()
 
 
-print("Rimsha").
+print("Rimsha")
 print("Princess")
 print("I am in the class")
 from fastapi import FastAPI
