@@ -72,3 +72,16 @@ def create_cat_svg(filename="cat_image.svg"):
 
   <!-- Belly -->
   <ellipse cx="100" cy="140" rx="35" ry="25" fill="#ffe4b5" opacity="0.6"/>
+</svg>'''
+
+    with open(filename, 'w', encoding='utf-8') as f:
+        f.write(svg_content)
+    
+    print(f"✅ Cat SVG image created successfully: {filename}")
+    print(f"   File path: {os.path.abspath(filename)}")
+    return filename
+
+if __name__ == "__main__":
+    import os
+    create_cat_svg()
+
